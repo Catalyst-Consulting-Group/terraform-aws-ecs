@@ -1,8 +1,8 @@
-# TODO Terraform Module
+# AWS ECS Terraform Module
 
-_TODO_
+A collection of opinionated Terraform modules for creating ECS resources.
 
-## Usage
+## Modules
 
 _TODO_
 
