@@ -4,7 +4,10 @@ A collection of opinionated Terraform modules for creating ECS resources.
 
 ## Modules
 
-_TODO_
+- [fargate-cluster](./modules/fargate-cluster/README.md)
+- [fargate-service](./modules/fargate-service/README.md)
+- [task-execution-role](./modules/task-role/README.md)
+- [task-role](./modules/task-role/README.md)
 
 ## Authors
 
