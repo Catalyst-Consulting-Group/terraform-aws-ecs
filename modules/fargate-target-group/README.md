@@ -9,8 +9,10 @@ module "fargate_target_group" {
   source = "Catalyst-Consulting-Group/ecs/aws//modules/fargate-target-group"
   version = "~> 1.0"
 
-  name = "example"
-
+  name         = "example"
   host_headers = ["example.foobar.com"]
+
+  vpc_id           = aws_vpc.example.id
+  alb_listener_arn = aws_lb_listener.example.arn
 }
 ```

@@ -18,9 +18,9 @@ resource "aws_ecs_service" "this" {
     for_each = { for lb in var.load_balancers : lb.target_group_arn => lb }
 
     content {
-      target_group_arn = each.value.target_group_arn
-      container_name   = each.value.container_name
-      container_port   = each.value.container_port
+      target_group_arn = load_balancer.value.target_group_arn
+      container_name   = load_balancer.value.container_name
+      container_port   = load_balancer.value.container_port
     }
   }
 
