@@ -51,7 +51,8 @@ variable "task_execution_role_arn" {
 }
 
 variable "tags" {
-  description = "(Optional) A map of tags to add to the task definition"
+  description = "(Optional) A map of tags to add to resources"
   type        = map(string)
   default     = {}
+  nullable    = false
 }

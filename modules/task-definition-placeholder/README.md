@@ -1,4 +1,4 @@
-# tas-definition-placeholder
+# task-definition-placeholder
 
 This module creates an opinionated `aws_ecs_task_definition` designed to be used for bootstrapping an AWS ECS Fargate service.
 

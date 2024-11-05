@@ -12,7 +12,8 @@ variable "container_insights" {
 }
 
 variable "tags" {
-  description = "(Optional) A map of tags to add to the cluster"
+  description = "(Optional) A map of tags to add to resources"
   type        = map(string)
   default     = {}
+  nullable    = false
 }
