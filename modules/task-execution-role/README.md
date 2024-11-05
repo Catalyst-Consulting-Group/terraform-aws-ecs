@@ -5,7 +5,7 @@ This module creates an `aws_iam_role` with the appropriate `assume_role_policy` 
 ## Usage
 
 ```
-module "task_role" {
+module "task_execution_role" {
   source = "Catalyst-Consulting-Group/ecs/aws//modules/task-execution-role"
   version = "~> 1.0"
 
