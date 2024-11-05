@@ -5,14 +5,14 @@ variable "name" {
 }
 
 variable "container_insights" {
-  description = "(Optional, Default: `null`) The CloudWatch Container Insights setting for the cluster. Valid values: 'enabled', 'disabled' (or `null` to use account default)"
+  description = "(Optional) The CloudWatch Container Insights setting for the cluster. Valid values: 'enabled', 'disabled' (or `null` to use account default)"
   type        = string
   nullable    = true
   default     = null
 }
 
 variable "tags" {
-  description = "(Optional, Default: `{}`) A map of tags to add to the cluster"
+  description = "(Optional) A map of tags to add to the cluster"
   type        = map(string)
   default     = {}
 }

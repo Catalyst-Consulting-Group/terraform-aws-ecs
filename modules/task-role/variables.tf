@@ -11,13 +11,13 @@ variable "name_prefix" {
 }
 
 variable "tags" {
-  description = "(Optional, Default: `{}`) A map of tags to add to the role"
+  description = "(Optional) A map of tags to add to the role"
   type        = map(string)
   default     = {}
 }
 
 variable "custom_policy_arns" {
-  description = "(Optional, Default: `[]`) A list of IAM Policy ARNs to associate with the role"
+  description = "(Optional) A list of IAM Policy ARNs to associate with the role"
   type        = list(string)
   default     = []
 }

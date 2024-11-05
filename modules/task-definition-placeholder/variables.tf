@@ -51,7 +51,7 @@ variable "task_execution_role_arn" {
 }
 
 variable "tags" {
-  description = "(Optional, Default: `{}`) A map of tags to add to the task definition"
+  description = "(Optional) A map of tags to add to the task definition"
   type        = map(string)
   default     = {}
 }
