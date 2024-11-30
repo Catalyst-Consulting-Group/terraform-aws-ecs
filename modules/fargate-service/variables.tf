@@ -23,6 +23,13 @@ variable "initial_task_definition" {
   nullable    = false
 }
 
+variable "initial_desired_count" {
+  description = "(Optional) The number of instances of the task definition to place and keep running that you want to bootstrap your service with"
+  type        = number
+  default     = 1
+  nullable    = false
+}
+
 variable "enable_execute_command" {
   description = "(Optional) Controls the `enable_execute_command` option for the service"
   type        = bool

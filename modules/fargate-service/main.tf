@@ -6,7 +6,7 @@ resource "aws_ecs_service" "this" {
   platform_version = var.platform_version
 
   task_definition = var.initial_task_definition
-  desired_count   = 1
+  desired_count   = var.initial_desired_count
 
   enable_execute_command = var.enable_execute_command
   force_new_deployment   = var.force_new_deployment
